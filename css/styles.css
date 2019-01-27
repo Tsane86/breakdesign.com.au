@@ -1,0 +1,66 @@
+/*
+KEYBOARD SHORTCUTS
+==================================================================
+Move Line Up / Down
+Ctrl + ↑ / Ctrl + ↓
+
+Delete Line
+Ctrl + Shift + K
+
+Indent
+Ctrl + [
+
+Go to start of line
+Home OR Fn + ←
+
+Go to end of line   
+End or Fn + →
+
+Multiple Selection
+Ctrl + D
+
+Find in All Files
+Ctrl + Shift + F
+*/
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+
+
+/* The hero image */
+.hero-image {
+    /* Set a specific height */
+    height: 400px;
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: inital;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-about {
+	background-image: url("https://picsum.photos/800/401/?random");
+}
+
+.hero-blog {
+	background-image: url("https://picsum.photos/800/402/?random");
+}
+
+.hero-contact {
+	background-image: url("https://picsum.photos/800/403/?random");
+}
