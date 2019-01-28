@@ -64,3 +64,41 @@ Ctrl + Shift + F
 .hero-contact {
 	background-image: url("https://picsum.photos/800/403/?random");
 }
+
+/* Mobile */
+
+@media only screen and (max-width: 991px) { 
+
+.navbar {
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar-brand {
+	padding: 10px;
+	margin-left: 5px;
+}
+
+.navbar-toggler {
+	margin-right: 10px;
+}
+
+.nav-item {
+	background: black;
+	/*border: 1px white solid;*/
+	/*padding-bottom: 10px;*/	
+}
+
+.nav-link {
+	padding: 8px 16px !important;
+	color: white !important;
+}
+
+.first {
+	padding-top: 8px;
+}
+
+.last {
+	padding-bottom: 8px;
+}
+}
