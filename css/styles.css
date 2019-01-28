@@ -65,7 +65,15 @@ Ctrl + Shift + F
 	background-image: url("https://picsum.photos/800/403/?random");
 }
 
-/* Mobile */
+/* All styles */
+
+.bg-dark {
+	background-color: #000000 !important;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23cbcacc' fill-opacity='0.11'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+
+
+ /* Mobile */
 
 @media only screen and (max-width: 991px) { 
 
@@ -74,9 +82,12 @@ Ctrl + Shift + F
 	margin: 0px;
 }
 
+.navbar-toggler {
+}
+
 .navbar-brand {
-	padding: 10px;
-	margin-left: 5px;
+	padding: 13px 16px;
+	
 }
 
 .navbar-toggler {
@@ -85,7 +96,7 @@ Ctrl + Shift + F
 
 .nav-item {
 	background: black;
-	/*border: 1px white solid;*/
+	/*border: 1px white solid;
 	/*padding-bottom: 10px;*/	
 }
 
