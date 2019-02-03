@@ -32,7 +32,7 @@ Ctrl + Shift + F
 /* The hero image */
 .hero-image {
     /* Set a specific height */
-    height: 400px;
+    height: 500px;
     /*margin-top: 20px;*/
     /*margin-bottom: 20px;*/
 
@@ -40,7 +40,7 @@ Ctrl + Shift + F
     background-position: inital;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment:scroll;
 }
 
 /* Place text in the middle of the image */
@@ -67,11 +67,20 @@ Ctrl + Shift + F
 
 /* All styles */
 
-.bg-dark {
+/* Overwrite bootstrap background on nav bar to new color*/
+nav.bg-dark {
 	background-color: #000000 !important;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23cbcacc' fill-opacity='0.11'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E") !important;
+	 /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23cbcacc' fill-opacity='0.11'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E") !important; */
+	/* TBD if I want a SVG or just plain black*/
 }
 
+/*a.nav-link {
+	color: white !important;
+}*/
+
+h3 {
+	color: #ED1C24;
+}
 
  /* Mobile */
 
@@ -81,6 +90,20 @@ Ctrl + Shift + F
 	padding: 0px;
 	margin: 0px;
 }
+
+.navbar-nav {
+	background: #2E2E2F;
+	box-shadow: 
+		inset 0px 11px 15px -10px #000000,
+    	inset 0px -8px 15px -10px #000000;
+}
+
+/* Hack (below) to move hero div down when navbar expanded*/
+
+
+li.nav-item {
+	background: transparent;
+} /*make nav items transparent so containing div background can be seen */
 
 .navbar-toggler {
 }
