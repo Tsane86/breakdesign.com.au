@@ -27,20 +27,18 @@ Ctrl + Shift + F
    Custom styles
    ========================================================================== */
 
-
+/* All styles */
 
 /* The hero image */
 .hero-image {
     /* Set a specific height */
     height: 500px;
-    /*margin-top: 20px;*/
-    /*margin-bottom: 20px;*/
 
     /* Position and center the image to scale nicely on all screens */
     background-position: inital;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment:scroll;
+    background-attachment:fixed;
 }
 
 /* Place text in the middle of the image */
@@ -65,8 +63,6 @@ Ctrl + Shift + F
 	background-image: url("https://picsum.photos/800/403/?random");
 }
 
-/* All styles */
-
 /* Overwrite bootstrap background on nav bar to new color*/
 nav.bg-dark {
 	background-color: #000000 !important;
@@ -74,17 +70,22 @@ nav.bg-dark {
 	/* TBD if I want a SVG or just plain black*/
 }
 
-/*a.nav-link {
-	color: white !important;
-}*/
-
 h3 {
 	color: #ED1C24;
+	font-weight: 600;
 }
 
- /* Mobile */
+.navbar-brand img {
+	width:200px;
+}
+
+/* Mobile */
 
 @media only screen and (max-width: 991px) { 
+
+.navbar-brand img {
+	width:150px;
+}
 
 .navbar {
 	padding: 0px;
@@ -97,9 +98,6 @@ h3 {
 		inset 0px 11px 15px -10px #000000,
     	inset 0px -8px 15px -10px #000000;
 }
-
-/* Hack (below) to move hero div down when navbar expanded*/
-
 
 li.nav-item {
 	background: transparent;
@@ -119,13 +117,10 @@ li.nav-item {
 
 .nav-item {
 	background: black;
-	/*border: 1px white solid;
-	/*padding-bottom: 10px;*/	
 }
 
 .nav-link {
 	padding: 8px 16px !important;
-	color: white !important;
 }
 
 .first {
