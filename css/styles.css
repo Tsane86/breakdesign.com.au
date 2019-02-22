@@ -29,6 +29,8 @@ Ctrl + Shift + F
 
 /* All styles */
 
+/* Font size scaling */
+
 /* The hero image */
 .hero-image {
     /* Set a specific height */
@@ -45,7 +47,7 @@ Ctrl + Shift + F
 .hero-text {
     text-align: center;
     position: relative;
-    top: 50%;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -55,7 +57,7 @@ Ctrl + Shift + F
 	background-image: url("../img/nitish-kadam-34748-unsplash.jpg");
 }
 
-.hero-blog {
+.hero-projects {
 	background-image: url("../img/justin-leibow-62-unsplash.jpg");
 }
 
@@ -151,3 +153,4 @@ li.nav-item {
 	padding-bottom: 8px;
 }
 }
+
