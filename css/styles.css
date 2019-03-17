@@ -12,6 +12,9 @@ Ctrl + Shift + K
 Indent
 Ctrl + [
 
+Find Matching Bracket
+Ctrl + m
+
 Go to start of line
 Home OR Fn + ←
 
@@ -76,6 +79,7 @@ CTRL + ALT + F2
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+		text-shadow: 2px 2px 2px #000000;
 }
 
 .hero-about {
