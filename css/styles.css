@@ -150,8 +150,8 @@ li.nav-item {
 	background: transparent;
 } /*make nav items transparent so containing div background can be seen */
 
-.navbar-toggler {
-}
+/* .navbar-toggler {
+} */
 
 .navbar-brand {
 	padding: 13px 16px;
