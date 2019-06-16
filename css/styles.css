@@ -54,9 +54,26 @@ CTRL + ALT + F2
 
 /* SVG Styles */
 
-.brand {
+.brand{
 	fill: #ffffff;
 	width:200px;
+}
+
+.social {
+	width: 75px;
+	fill: grey;
+	opacity: .25;
+	transition: fill 1s, opacity 1s;
+}
+
+.linkedin:hover {
+	fill: #0077B5;
+	opacity: 1;
+}
+
+.insta:hover {
+	fill: #ff69b4;
+	opacity: 1;
 }
 
 /* The hero image */
@@ -106,9 +123,9 @@ h3 {
 
 /* Social and page footer hidden for release, do in next sprint*/
 
-.social, .page-footer {
+/* .page-footer {
 	display: none;
-}
+} */
 
 /* Mobile */
 
@@ -125,8 +142,10 @@ h3 {
 .hero-image {
 	height: 200px;
 }
+}
 
 @media only screen and (max-width: 991px) {
+
 
 /* Hero image to fit on next size screen */
 
