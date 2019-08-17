@@ -50,6 +50,10 @@ CTRL + ALT + F2
 
 /* All styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Font size scaling */
 
 /* SVG Styles */
