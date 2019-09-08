@@ -52,7 +52,7 @@ CTRL + ALT + F2
 
 html {
   scroll-behavior: smooth;
-  /* font-size: 24px; */
+  font-size: 20px;
 }
 
 /* Font size scaling */
