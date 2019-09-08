@@ -52,77 +52,78 @@ CTRL + ALT + F2
 
 html {
   scroll-behavior: smooth;
+  /* font-size: 24px; */
 }
 
 /* Font size scaling */
 
 /* SVG Styles */
 
-.brand{
-	fill: #ffffff;
-	width:200px;
+.brand {
+  fill: #ffffff;
+  width: 200px;
 }
 
 .social {
-	width: 75px;
-	fill: grey;
-	opacity: .25;
-	transition: fill 1s, opacity 1s;
+  width: 75px;
+  fill: grey;
+  opacity: 0.25;
+  transition: fill 1s, opacity 1s;
 }
 
 .linkedin:hover {
-	fill: #0077B5;
-	opacity: 1;
+  fill: #0077b5;
+  opacity: 1;
 }
 
 .insta:hover {
-	fill: #ff69b4;
-	opacity: 1;
+  fill: #ff69b4;
+  opacity: 1;
 }
 
 /* The hero image */
 .hero-image {
-    /* Set a specific height */
-    height: 500px;
+  /* Set a specific height */
+  height: 500px;
 
-    /* Position and center the image to scale nicely on all screens */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:fixed;
-    background-position: center;
+  /* Position and center the image to scale nicely on all screens */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* Place text in the middle of the image */
 .hero-text {
-    text-align: center;
-    position: relative;
-    top: 250px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-		text-shadow: 2px 2px 2px #000000;
+  text-align: center;
+  position: relative;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .hero-about {
-	background-image: url("../img/nitish-kadam-34748-unsplash.jpg");
+  background-image: url("../img/nitish-kadam-34748-unsplash.jpg");
 }
 
 .hero-projects {
-	background-image: url("../img/justin-leibow-62-unsplash.jpg");
+  background-image: url("../img/justin-leibow-62-unsplash.jpg");
 }
 
 .hero-contact {
-	background-image: url("../img/todd-desantis-37264-unsplash.jpg");
+  background-image: url("../img/todd-desantis-37264-unsplash.jpg");
 }
 
 /* Overwrite bootstrap background on nav bar to new color*/
 nav.bg-dark {
-	background-color: #000000 !important;
+  background-color: #000000 !important;
 }
 
 h3 {
-	color: #ED1C24;
-	font-weight: 600;
+  color: #ed1c24;
+  font-weight: 600;
 }
 
 /* Social and page footer hidden for release, do in next sprint*/
@@ -136,68 +137,63 @@ h3 {
 /*First media query to resize the nav brand to fit on one line*/
 
 @media only screen and (max-width: 400px) {
+  .brand {
+    width: 150px;
+  }
 
-.brand {
-	width: 150px;
-}
+  /* Hero image to fit on smaller screen */
 
-/* Hero image to fit on smaller screen */
-
-.hero-image {
-	height: 200px;
-}
+  .hero-image {
+    height: 200px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
+  /* Hero image to fit on next size screen */
 
+  .hero-image {
+    height: 250px;
+  }
 
-/* Hero image to fit on next size screen */
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+  }
 
-.hero-image {
-	height: 250px;
-}
+  .navbar-nav {
+    background: #2e2e2f;
+    box-shadow: inset 0px 11px 15px -10px #000000,
+      inset 0px -8px 15px -10px #000000;
+  }
 
-.navbar {
-	padding: 0px;
-	margin: 0px;
-}
+  li.nav-item {
+    background: transparent;
+  } /*make nav items transparent so containing div background can be seen */
 
-.navbar-nav {
-	background: #2E2E2F;
-	box-shadow:
-		inset 0px 11px 15px -10px #000000,
-    	inset 0px -8px 15px -10px #000000;
-}
-
-li.nav-item {
-	background: transparent;
-} /*make nav items transparent so containing div background can be seen */
-
-/* .navbar-toggler {
+  /* .navbar-toggler {
 } */
 
-.navbar-brand {
-	padding: 13px 16px;
+  .navbar-brand {
+    padding: 13px 16px;
+  }
 
-}
+  .navbar-toggler {
+    margin-right: 10px;
+  }
 
-.navbar-toggler {
-	margin-right: 10px;
-}
+  .nav-item {
+    background: black;
+  }
 
-.nav-item {
-	background: black;
-}
+  .nav-link {
+    padding: 8px 16px !important;
+  }
 
-.nav-link {
-	padding: 8px 16px !important;
-}
+  .first {
+    padding-top: 8px;
+  }
 
-.first {
-	padding-top: 8px;
-}
-
-.last {
-	padding-bottom: 8px;
-}
+  .last {
+    padding-bottom: 8px;
+  }
 }
