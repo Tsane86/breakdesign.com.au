@@ -25,11 +25,11 @@
     }
 
     .story {
-      margin: 10px;
+      margin: 15px;
       background: rgb(235, 231, 231);
       border: 3px black;
       border-radius: 15px;
-      padding: 10px 25px;
+      padding: 15px 30px;
     }
 
     h1 {
@@ -39,6 +39,24 @@
     }
 
     h2 {
+      margin-block-end: .33em;
+    }
+
+    h3,
+    h4,
+    ul {
+      margin-block-start: .83em;
+      margin-block-end: .83em;
+    }
+
+    /* class to make compensate for the line height increase by lightning emjoi */
+    .with-emoji {
+      margin-block-start: 0em;
+    }
+
+    h2,
+    a:link,
+    a:visited {
       color: rgb(31, 121, 199);
     }
 
@@ -48,6 +66,11 @@
 
     .contact {
       font-weight: 800;
+    }
+
+    footer {
+      text-align: center;
+      margin: 10px 0px;
     }
   </style>
   <style amp-boilerplate>
@@ -150,6 +173,7 @@
         }
       }
     </script>
+
 </head>
 
 <body>
@@ -159,9 +183,9 @@
       with Software as a Service (SaaS) industry experience.
       Currently studying part time and working in SaaS Onboarding. </p>
 
-    <p class="contact">brenton@breakdesign.com.au</br>
-      https://www.linkedin.com/in/brenton-gibbons-495889165/</br>
-      0402 413 340</p>
+    <p class="contact">
+      &#105;&#110;&#102;&#111;&#064;&#098;&#114;&#101;&#097;&#107;&#100;&#101;&#115;&#105;&#103;&#110;&#046;&#099;&#111;&#109;&#046;&#097;&#117;</br>
+      https://www.linkedin.com/in/brenton-gibbons-495889165/</p>
   </div>
   <div class="story">
     <h2>PROFESSIONAL SKILLS</h2>
@@ -174,8 +198,8 @@
   </div>
   <div class="story">
     <h2>TECHNICAL SKILLS</h2>
-    <ul>
-      <li>Languages including HTML, CSS, Javascript, SVG, Git, Bootstrap and BASH</li>
+    <ul class="with-emoji">
+      <li>Languages including HTML, CSS, Javascript, SVG, Git, Bootstrap, ⚡AMP and BASH</li>
       <li>Systems experience with Windows, Linux (Ubunutu + Rasbian) and Mac</li>
       <li>Software experience with GitHub, Adwords, Analytics and Atom</li>
     </ul>
@@ -212,8 +236,14 @@
   </div>
   <div class="story">
     <h2>REFERENCES</h2>
-    <p>Available on request</p>
+    <p>Available on
+      <a
+        href="MAILTO: &#105;&#110;&#102;&#111;&#064;&#098;&#114;&#101;&#097;&#107;&#100;&#101;&#115;&#105;&#103;&#110;&#046;&#099;&#111;&#109;&#046;&#097;&#117;?subject=References&body=Please send me your References :)">
+        request</a></p>
   </div>
+  <footer>
+    <a href="#" class="" aria-label="Back to top">Back to top</a>
+  </footer>
   <amp-analytics type="gtag" data-credentials="include">
     <script type="application/json">
         {
