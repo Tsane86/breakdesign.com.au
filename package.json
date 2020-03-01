@@ -1,0 +1,28 @@
+{
+  "name": "breakdesign.com.au",
+  "version": "1.4.5",
+  "description": "Personal Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tsane86/breakdesign.com.au.git"
+  },
+  "keywords": [
+    "Personal",
+    "Website",
+    "Developer",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "BASH"
+  ],
+  "author": "Brenton Gibbons",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tsane86/breakdesign.com.au/issues"
+  },
+  "homepage": "https://github.com/Tsane86/breakdesign.com.au#readme"
+}
