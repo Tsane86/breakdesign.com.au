@@ -1,5 +1,5 @@
 $(function() {
-  var topoffset = 45; //variable for menu height
+  var topoffset = 80; //variable for menu height
 
   //Use smooth scrolling when clicking on navigation
   $(".navbar-nav a").click(function() {

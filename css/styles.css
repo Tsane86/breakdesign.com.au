@@ -84,7 +84,7 @@ html {
 /* The hero image */
 .hero-image {
   /* Set a specific height */
-  height: 500px;
+  height: 760px;
 
   /* Position and center the image to scale nicely on all screens */
   background-repeat: no-repeat;
@@ -95,13 +95,12 @@ html {
 
 /* Place text in the middle of the image */
 .hero-text {
-  text-align: center;
   position: relative;
-  top: 250px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 2px #000000;
+  padding: 10px;
+  text-align: center;
 }
 
 .hero-about {
@@ -124,6 +123,7 @@ nav.bg-dark {
 h3 {
   color: #ed1c24;
   font-weight: 600;
+  margin-bottom: 0.8rem;
 }
 
 /* Social and page footer hidden for release, do in next sprint*/
@@ -134,26 +134,8 @@ h3 {
 
 /* Mobile */
 
-/*First media query to resize the nav brand to fit on one line*/
-
-@media only screen and (max-width: 400px) {
-  .brand {
-    width: 150px;
-  }
-
-  /* Hero image to fit on smaller screen */
-
-  .hero-image {
-    height: 200px;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   /* Hero image to fit on next size screen */
-
-  .hero-image {
-    height: 250px;
-  }
 
   .navbar {
     padding: 0px;
@@ -195,5 +177,23 @@ h3 {
 
   .last {
     padding-bottom: 8px;
+  }
+}
+
+/*First media query to resize the nav brand to fit on one line*/
+
+@media only screen and (max-width: 450px) {
+  .brand {
+    width: 150px;
+  }
+
+  /* Hero image to fit on smaller screen */
+
+  .hero-image {
+    height: 400px;
+  }
+
+  .hero-text {
+    top: 200px;
   }
 }
