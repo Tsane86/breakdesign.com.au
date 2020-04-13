@@ -1,0 +1,223 @@
+/*
+KEYBOARD SHORTCUTS
+==================================================================
+Can search for functions using the command palette = ALT + SHIFT + P
+
+Move Line Up / Down
+Ctrl + ↑ / Ctrl + ↓
+
+Delete Line
+Ctrl + Shift + K
+
+Indent
+Ctrl + [
+
+Find Matching Bracket
+Ctrl + m
+
+Go to start of line
+Home OR Fn + ←
+
+Go to end of line
+End or Fn + →
+
+Multiple Selection
+Ctrl + D
+
+Multiple Select all
+Alt + f3
+
+Find in All Files
+Ctrl + Shift + F
+
+Open side by side
+CTRL + k + arrow button
+
+Open files in projects
+CTRL + t
+
+Jumping between tags
+CTRL + r for
+
+For bookmarks
+CTRL + ALT + F2
+
+*/
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+/* All styles */
+$red: #ed1c24;
+$brand-white: #ffffff;
+$linkedin: #0077b5;
+$insta: #ff69b4;
+$nav-black: #2e2e2f;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+a,
+a:hover {
+  color: magenta;
+}
+
+a:hover {
+  font-weight: 600;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Font size scaling */
+
+/* SVG Styles */
+
+.brand {
+  fill: $brand-white;
+  width: 200px;
+}
+
+.social {
+  width: 125px;
+  fill: grey;
+  opacity: 0.25;
+  transition: fill 1s, opacity 1s;
+}
+
+.linkedin:hover {
+  fill: $linkedin;
+  opacity: 1;
+}
+
+.insta:hover {
+  fill: $insta;
+  opacity: 1;
+}
+
+/* The hero image */
+.hero-image {
+  /* Set a specific height */
+  height: 760px;
+  box-shadow: inset 0 0 30px $nav-black;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  text-align: center;
+  font: 700 2.8rem Arial, Helvetica, sans-serif;
+}
+
+.hero-about {
+  background-color: magenta;
+
+  //   background-image: url("../img/WEB-nitish-kadam-34748-unsplash.jpg");
+}
+
+.hero-projects {
+  background-color: yellow;
+  //   background-image: url("../img/WEB-justin-leibow-62-unsplash.jpg");
+}
+
+.hero-contact {
+  background-color: cyan;
+  //   background-image: url("../img/todd-desantis-37264-unsplash.jpg");
+}
+
+/* Overwrite bootstrap background on nav bar to new color*/
+nav.bg-dark {
+  background-color: #000000 !important;
+}
+
+h3 {
+  color: $red;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+/* Social and page footer hidden for release, do in next sprint*/
+
+/* .page-footer {
+      display: none;
+  } */
+
+/* Mobile */
+
+@media only screen and (max-width: 991px) {
+  /* Hero image to fit on next size screen */
+
+  .navbar {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .navbar-nav {
+    background: $nav-black;
+    box-shadow: inset 0px 11px 15px -10px #000000,
+      inset 0px -8px 15px -10px #000000;
+  }
+
+  li.nav-item {
+    background: transparent;
+  } /*make nav items transparent so containing div background can be seen */
+
+  /* .navbar-toggler {
+  } */
+
+  .navbar-brand {
+    padding: 13px 16px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .nav-item {
+    background: $nav-black;
+  }
+
+  .nav-link {
+    padding: 8px 16px !important;
+  }
+
+  .first {
+    padding-top: 8px;
+  }
+
+  .last {
+    padding-bottom: 8px;
+  }
+}
+
+/*First media query to resize the nav brand to fit on one line*/
+
+@media only screen and (max-width: 450px) {
+  .brand {
+    width: 150px;
+  }
+
+  /* Hero image to fit on smaller screen */
+
+  .hero-image {
+    height: 400px;
+  }
+
+  .hero-text {
+    top: 200px;
+  }
+}
