@@ -1,6 +1,7 @@
 # Don't track content of these folders
 img/source-imgs
 .DS_Store
+shortcuts.txt
 
 # Compiled source #
 ###################

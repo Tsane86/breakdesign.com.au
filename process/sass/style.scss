@@ -1,59 +1,6 @@
-/*
-KEYBOARD SHORTCUTS
-==================================================================
-Can search for functions using the command palette = ALT + SHIFT + P
-
-Move Line Up / Down
-Ctrl + ↑ / Ctrl + ↓
-
-Delete Line
-Ctrl + Shift + K
-
-Indent
-Ctrl + [
-
-Find Matching Bracket
-Ctrl + m
-
-Go to start of line
-Home OR Fn + ←
-
-Go to end of line
-End or Fn + →
-
-Multiple Selection
-Ctrl + D
-
-Multiple Select all
-Alt + f3
-
-Find in All Files
-Ctrl + Shift + F
-
-Open side by side
-CTRL + k + arrow button
-
-Open files in projects
-CTRL + t
-
-Jumping between tags
-CTRL + r for
-
-For bookmarks
-CTRL + ALT + F2
-
-*/
-
-/* ==========================================================================
-   Custom styles
-   ========================================================================== */
-
 /* All styles */
-$red: #ed1c24;
-$brand-white: #ffffff;
-$linkedin: #0077b5;
-$insta: #ff69b4;
-$nav-black: #2e2e2f;
+
+@import "variables";
 
 html {
   scroll-behavior: smooth;
@@ -62,7 +9,7 @@ html {
 
 a,
 a:hover {
-  color: magenta;
+  color: $theme-colour-1;
 }
 
 a:hover {
@@ -104,39 +51,28 @@ a:hover {
   /* Set a specific height */
   height: 760px;
   box-shadow: inset 0 0 30px $nav-black;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
-  text-align: center;
-  font: 700 2.8rem Arial, Helvetica, sans-serif;
-}
-
-.hero-about {
-  background-color: magenta;
-
-  //   background-image: url("../img/WEB-nitish-kadam-34748-unsplash.jpg");
+  background-color: $theme-colour-1;
+  div {
+    //hero text in next div
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    text-align: center;
+    font: 700 5rem Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .hero-projects {
-  background-color: yellow;
-  //   background-image: url("../img/WEB-justin-leibow-62-unsplash.jpg");
+  background-color: $theme-colour-2;
 }
 
 .hero-contact {
-  background-color: cyan;
-  //   background-image: url("../img/todd-desantis-37264-unsplash.jpg");
+  background-color: $theme-colour-3;
 }
 
 /* Overwrite bootstrap background on nav bar to new color*/
@@ -145,16 +81,12 @@ nav.bg-dark {
 }
 
 h3 {
-  color: $red;
+  color: $theme-colour-3;
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
 
-/* Social and page footer hidden for release, do in next sprint*/
-
-/* .page-footer {
-      display: none;
-  } */
+/* Social */
 
 /* Mobile */
 
@@ -195,11 +127,13 @@ h3 {
     padding: 8px 16px !important;
   }
 
-  .first {
-    padding-top: 8px;
+  .navbar-nav {
+    li:first-of-type {
+      padding-top: 8px;
+    }
   }
 
-  .last {
+  .navbar-nav li:last-of-type {
     padding-bottom: 8px;
   }
 }
