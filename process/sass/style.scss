@@ -1,6 +1,7 @@
 /* All styles */
 
 @import "variables";
+@import "mixins";
 
 html {
   scroll-behavior: smooth;
@@ -10,10 +11,9 @@ html {
 a,
 a:hover {
   color: $theme-colour-1;
-}
-
-a:hover {
-  font-weight: 600;
+  &:hover {
+    font-weight: 600;
+  }
 }
 
 .nav-link {
@@ -29,31 +29,22 @@ a:hover {
   width: 200px;
 }
 
-.social {
-  width: 125px;
-  fill: grey;
-  opacity: 0.25;
-  transition: fill 1s, opacity 1s;
+.linkedin {
+  @include social($linkedin);
 }
 
-.linkedin:hover {
-  fill: $linkedin;
-  opacity: 1;
-}
-
-.insta:hover {
-  fill: $insta;
-  opacity: 1;
+.insta {
+  @include social($insta);
 }
 
 /* The hero image */
-.hero-image {
+.hero-about {
   /* Set a specific height */
   height: 760px;
   box-shadow: inset 0 0 30px $nav-black;
-  background-color: $theme-colour-1;
   div {
     //hero text in next div
+    //! Do I need this postioned?
     position: relative;
     top: 50%;
     left: 50%;
@@ -67,12 +58,11 @@ a:hover {
   }
 }
 
-.hero-projects {
-  background-color: $theme-colour-2;
-}
-
-.hero-contact {
-  background-color: $theme-colour-3;
+@each $key, $value in $hero-colours {
+  .hero-#{$key} {
+    @extend .hero-about;
+    background-color: $value;
+  }
 }
 
 /* Overwrite bootstrap background on nav bar to new color*/
@@ -82,11 +72,9 @@ nav.bg-dark {
 
 h3 {
   color: $theme-colour-3;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
 }
-
-/* Social */
 
 /* Mobile */
 
@@ -147,11 +135,7 @@ h3 {
 
   /* Hero image to fit on smaller screen */
 
-  .hero-image {
+  .hero-about {
     height: 400px;
-  }
-
-  .hero-text {
-    top: 200px;
   }
 }

@@ -6,3 +6,9 @@ $nav-black: #2e2e2f;
 $theme-colour-1: magenta;
 $theme-colour-2: rgb(241, 237, 9);
 $theme-colour-3: #0099ff;
+
+$hero-colours: (
+  about: $theme-colour-1,
+  projects: $theme-colour-2,
+  contact: $theme-colour-3,
+);
