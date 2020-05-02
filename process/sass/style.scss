@@ -8,11 +8,20 @@ html {
   font-size: 20px;
 }
 
+.btn-primary {
+  border: 0;
+  background-color: $theme-colour-3;
+  transition: ease .5s background-color;
+  &:hover {
+    background-color: $theme-colour-1;
+  }
+}
+
 a,
 a:hover {
   color: $theme-colour-1;
   &:hover {
-    font-weight: 600;
+    // font-weight: 600;
   }
 }
 

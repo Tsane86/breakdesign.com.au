@@ -12,3 +12,14 @@ $hero-colours: (
   projects: $theme-colour-2,
   contact: $theme-colour-3,
 );
+
+.btn-primary {
+  border: 0;
+  background-color: $theme-colour-3;
+  &:hover {
+    background-color: $theme-colour-1;
+  }
+  a:hover {
+font-style: normal;
+  }
+}
