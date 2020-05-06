@@ -69,27 +69,27 @@
     </div>
   </nav>
 
-  <div class="hero-image" aria-hidden="true">
+  <div class="hero-about" aria-hidden="true">
     <div>
       I like HTML, CSS, Bash and Hot Sauce 🌶️
     </div>
   </div><!-- Hero image -->
 
   <div class="container" id="About">
-    <div class="m-4 mt-0 py-4">
+    <div class="py-5 px-2">
       <h3>ABOUT</h3></a>
-      <p>Hello World! My name is Brenton and I am a Designer, aspiring Software Engineer and a lifelong learner. I am
+      <p>Hello World! My name is Brenton and I am a Designer, on-the-side Software Engineer and a lifelong learner. I am
         curious by nature, a harder worker, a good team member and a problem solver. I have a passion for quality design
         through clean code. Designs with smart CSS, beautiful SVGs and subtle JS are my favourite.
       </p>
-      <p>This site will showcase my current <a href="#projects">Projects</a> & Achievements, and include a way to get in
+      <p>This site will showcase my current <a href="#projects">Projects</a> & Achievements, and¸ include a way to get in
         <a href="#contact">Contact</a> with me! Also, check out my <a href="resume/resume.html" target="_blank"
           title="AMP Resume">Resume</a>
         (built with ⚡AMP for speed).</p>
     </div>
   </div>
   <!--End contrainer...for now-->
-  <div id="Achievements" class="hero-image hero-about d-none" aria-hidden="true">
+  <div id="Achievements" class="hero-about d-none" aria-hidden="true">
   </div><!-- Hero image -->
   <div class="container d-none">
     <div class="m-4 py-4">
@@ -98,31 +98,60 @@
     </div>
   </div>
   <!--End contrainer...for now-->
-  <div class="hero-image hero-projects" aria-hidden="true">
+  <div class="hero-projects" aria-hidden="true">
     <div>
       And Coffee ☕
     </div>
   </div><!-- Hero image -->
-  <div class="container" id="projects">
-    <div class="m-4 py-4">
+  <div class="container" style="width: 100%; background-color: white;" id="projects">
+    <div class=" py-5">
       <h3>PROJECTS</h3></a>
-      <p>My current project is learning new skills to develop a increasingly awesome version of breakdesign.com.au.</p>
-      <p>Over the last few months, I have been using an AGILE methodology to develop this site, while learning new
-        skills at the same time. Previously, I have used AGILE to help with project management, and have found it a
-        amazing strategy for development. Whereas previously I would have taken months to build a new site, I had the
-        first iteration of this site out within a couple of weeks. The idea of iteration has become my new best friend.
-      </p>
-      <p>In future releases, I will be developing more new skills to put finer details into the site. My roadmap
-        includes:</p>
-      <ul><strong>
-          <li>Javascript controls to change CSS elements</li>
-          <li>SVG sprites</li>
-          <li>AMP version</li>
-      </ul></strong>
-      <p>The next release will be focused on Javascript to give some slight animation to elements.</p>
+      <div class="mt-2">
+        <p>Check out my current Projects in various states of completion.</p>
+      </div>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="img/justin-leibow-62-unsplash.jpg" alt="breakdesign.com.au">
+          <div class="card-body">
+           <h5 class="card-title">breakdesign.com.au</h5>
+           <p class="card-text">My current project is learning new skills to develop a increasingly awesome version of breakdesign.com.au.</p>
+           <!-- <p>Over the last few months, I have been using an AGILE methodology to develop this site, while learning new... -->
+            <!-- skills at the same time. Previously, I have used AGILE to help with project management, and have found it a
+            amazing strategy for development. Whereas previously I would have taken months to build a new site, I had the
+            first iteration of this site out within a couple of weeks. The idea of iteration has become my new best friend. <p>In future releases, I will be developing more new skills to put finer details into the site. My roadmap
+           includes:</p>
+           <li>Javascript controls to change CSS elements</li>
+           <li>SVG sprites</li>
+           <li>AMP version</li>
+           </ul></strong>
+           <p>The next release will be focused on Javascript to give some slight animation to elements.</p> -->
+           </p>
+           <a href="#" class="btn btn-primary">See more</a>
+         </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/nitish-kadam-34748-unsplash.jpg"alt="Pi Build">
+          <div class="card-body">
+            <h5 class="card-title">Pi Build Script</h5>
+            <p class="card-text">One of my ongoing projects is a BASH script that can build a Raspberry Pi media center with everything configured at once. 
+            </p>
+            <a href="#" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/todd-desantis-37264-unsplash.jpg"alt="Pi Build">
+          <div class="card-body">
+            <h5 class="card-title">AMP Resume</h5>
+            <p class="card-text">I am currently experiementing with AMP to deliver a quick search optimised version of
+              my resume. 
+            </p>
+            <a href="#" class="btn btn-primary">See more</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="hero-image hero-contact" aria-hidden="true">
+  <div class="hero-contact" aria-hidden="true">
     <div class="hero-text">Whiskey is awesome 🥃</div>
   </div><!-- Hero image -->
   <div class="container content" id="contact">
@@ -133,7 +162,7 @@
       </p>
     </div>
     <div class="d-flex justify-content-center mb-4">
-      <div class="social linkedin mb-4">
+      <div class="linkedin mb-4">
         <a href="http://bit.ly/31DtY22" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="LinkedInlogo">
             <title id="LinkedInlogo">Linkedin</title>
@@ -142,7 +171,7 @@
           </svg>
         </a>
       </div>
-      <div class="social insta ml-2">
+      <div class="insta ml-2">
         <a href="https://www.instagram.com/crazyhuskypack/" target="_blank" rel="noopener noreferrer">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="Instagramlogo">
             <title id="Instagramlogo">Instagram</title>

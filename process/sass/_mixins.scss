@@ -1,0 +1,10 @@
+@mixin social($colour) {
+  width: 125px;
+  fill: grey;
+  opacity: 0.25;
+  transition: fill .5s, opacity 1s;
+  &:hover {
+    fill: $colour;
+    opacity: 1;
+  }
+}
