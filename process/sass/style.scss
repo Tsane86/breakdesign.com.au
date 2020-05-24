@@ -11,7 +11,7 @@ html {
 .btn-primary {
   border: 0;
   background-color: $theme-colour-3;
-  transition: ease .5s background-color;
+  // transition: ease 0.5s background-color;
   &:hover {
     background-color: $theme-colour-1;
   }
@@ -19,10 +19,8 @@ html {
 
 a,
 a:hover {
+  transition: $ease;
   color: $theme-colour-1;
-  &:hover {
-    // font-weight: 600;
-  }
 }
 
 .nav-link {
@@ -46,33 +44,44 @@ a:hover {
   @include social($insta);
 }
 
-/* The hero image */
-.hero-about {
-  /* Set a specific height */
-  height: 760px;
+.hero-quote {
   box-shadow: inset 0 0 30px $nav-black;
-  div {
-    //hero text in next div
-    //! Do I need this postioned?
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px;
+  blockquote {
+    padding: $height 0px;
+    margin: 0px 30px;
     text-align: center;
     font: 700 5rem Arial, Helvetica, sans-serif;
     color: white;
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-      0px 18px 23px rgba(0, 0, 0, 0.1);
+    text-shadow: $shadows;
   }
 }
 
 @each $key, $value in $hero-colours {
   .hero-#{$key} {
-    @extend .hero-about;
+    @extend .hero-quote;
     background-color: $value;
   }
 }
+
+.card {
+  transition: $ease;
+  &:hover {
+    scale: 1.05;
+    box-shadow: $shadows;
+  }
+  .btn {
+    display: none;
+  }
+}
+
+.card .card-footer {
+  display: none;
+}
+
+// .progress-bar {
+//   width: 0%;
+//   background-color: $theme-colour-1;
+// }
 
 /* Overwrite bootstrap background on nav bar to new color*/
 nav.bg-dark {
@@ -144,7 +153,10 @@ h3 {
 
   /* Hero image to fit on smaller screen */
 
-  .hero-about {
-    height: 400px;
-  }
+  //   .hero-about {
+  //     height: 400px;
+  //     blockquote {
+  //       font-size: 3rem;
+  //     }
+  //   }
 }

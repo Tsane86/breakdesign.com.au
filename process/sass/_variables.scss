@@ -6,9 +6,14 @@ $nav-black: #2e2e2f;
 $theme-colour-1: magenta;
 $theme-colour-2: rgb(241, 237, 9);
 $theme-colour-3: #0099ff;
-
+$progressValue: 0%;
+$shadows: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+  0px 18px 23px rgba(0, 0, 0, 0.1);
+$ease: all 0.75s ease;
 $hero-colours: (
   about: $theme-colour-1,
   projects: $theme-colour-2,
   contact: $theme-colour-3,
 );
+
+$height: calc((100% / 5.8));
