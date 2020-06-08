@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 20px;
+  background-color: black;
 }
 
 .btn-primary {
@@ -44,8 +45,12 @@ a:hover {
   @include social($insta);
 }
 
+
 .hero-quote {
   box-shadow: inset 0 0 30px $nav-black;
+   background: url("../img/thor-alvis-sgrCLKYdw5g-unsplash.jpg") no-repeat top
+   center, linear-gradient(90deg, $theme-colour-1, $theme-colour-2 );
+    background-blend-mode: overlay;
   blockquote {
     padding: $height 0px;
     margin: 0px 30px;
@@ -59,11 +64,12 @@ a:hover {
 @each $key, $value in $hero-colours {
   .hero-#{$key} {
     @extend .hero-quote;
-    background-color: $value;
+   
+    
   }
 }
 
-.card {
+#projects.card {
   transition: $ease;
   &:hover {
     scale: 1.05;
@@ -72,6 +78,11 @@ a:hover {
   .btn {
     display: none;
   }
+}
+
+.card-header > h5 > .btn {
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 .card .card-footer {

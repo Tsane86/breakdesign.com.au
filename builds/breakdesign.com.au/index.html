@@ -70,8 +70,8 @@
       </div>
     </nav>
   </header>
-  <main>
-    <div class="hero-about">
+  <!-- <main> -->
+    <div class="hero-quote">
       <blockquote>
         I like <span class="big">HTML</span>, CSS, Bash and Hot Sauce 🌶️
       </blockquote>
@@ -90,36 +90,67 @@
           <a href="#contact">Contact</a> with me! Also, check out my <a href="resume/resume.html" target="_blank"
             title="AMP Resume">Resume</a>
           (built with ⚡AMP for speed).</p>
+          <div id="accordion" class="my-4">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    EXPERIENCE
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                    I have extensive experience in Web based technologies and services, which include:</p>
+                  <ul class="m-0">
+                    <li>Website maintenance</li>
+                    <li>SaSS Onboarding & Support</li>
+                    <li>Account Management</li>
+                    <li>Search Engine Optimisation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    SKILLS
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <p>
+                    I have a number of skills including:
+                  </p>
+                  <ul class="m-0">
+                    <li>HTML, CSS and Javascript</li>
+                    <li>BASH</li>
+                    <li>SVG, Git and AMP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Achievements
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus delectus vel maiores ea dignissimos aperiam consequatur ut neque quisquam totam sunt explicabo molestias tempora iure eligendi, iusto repellat deserunt aliquam.
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       <!--End contrainer...for now-->
     </section>
-    <section class="container">
-      <div class="row justify-content-between px-2 py-3 mb-4">
-        <div class="col-lg-6" id="Experience">
-          <h3>EXPERIENCE</h3>
-          <p>
-            I have extensive experience in Web based technologies and services, which include:
-          <ul>
-            <li>Website maintenance</li>
-            <li>SaSS Onboarding & Support</li>
-            <li>Account Management</li>
-            <li>Search Engine Optimisation</li>
-          </ul>
-          </p>
-        </div>
-        <div id="skills" class="col-lg-4 pt-4 pt-lg-0">
-          <h3>SKILLS</h3>
-          <p>
-            I have a number of skills including:
-          </p>
-          <ul>
-            <li>HTML, CSS and Javascript</li>
-            <li>BASH</li>
-            <li>SVG, Git and AMP</li>
-          </ul>
-        </div>
-    </section>
-    <!--End contrainer...for now-->
     <div class="hero-projects" aria-hidden="true">
       <blockquote>
         And Coffee ☕
@@ -150,7 +181,7 @@
            </ul></strong>
            <p>The next release will be focused on Javascript to give some slight animation to elements.</p> -->
               </p>
-              <a href="#" class="btn btn-primary">See more</a>
+              <a href="#" class="btn btn-primary ">See more</a>
             </div>
             <div class="card-footer p-0">
               <div class="text-center progress-bar p-2">
